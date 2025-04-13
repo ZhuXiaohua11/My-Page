@@ -84,3 +84,15 @@ footer {
     font-size: 0.9em;
     margin-top: 40px;
 }
+/* ✅ 页面跳转时预留空间，避免锚点内容被导航栏挡住 */
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px; /* 可根据导航栏高度调整这个值 */
+}
+
+/* ✅ 如果你想让导航栏始终固定在顶部 */
+header {
+    position: sticky;  /* 或改为 fixed 也可以 */
+    top: 0;
+    z-index: 1000;
+}
