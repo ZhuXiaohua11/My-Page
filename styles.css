@@ -1,36 +1,86 @@
+/* 全局基础样式 */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
-    text-align: center;
+    background-color: #f9f9f9;
+    color: #333;
 }
 
+/* 顶部导航栏 */
 header {
     background-color: #333;
     color: white;
-    padding: 20px;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
 }
 
 nav ul {
     list-style: none;
     padding: 0;
+    margin: 10px 0 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
 }
 
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-nav ul li a {
+nav a {
     color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* 主要內容區 */
+main {
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+section h2 {
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+/* 列表樣式 */
+ul {
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+/* 链接样式 */
+a {
+    color: #007acc;
     text-decoration: none;
 }
 
+a:hover {
+    text-decoration: underline;
+}
+
+/* 页脚 */
 footer {
     background-color: #333;
     color: white;
-    padding: 10px;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+    text-align: center;
+    padding: 15px;
+    font-size: 0.9em;
+    margin-top: 40px;
 }
